@@ -1,14 +1,11 @@
-# Welcome to your CDK TypeScript project!
+# Fargate CDK Deploy
 
-This is a blank project for TypeScript development with CDK.
+This is a sample [AWS CDK](https://aws.amazon.com/cdk/) application to illustrate how one can build a
+[Docker](https://www.docker.com/) image and deploy it to [AWS Fargate](https://aws.amazon.com/fargate/) by using CDK.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+To get started, run `npm install` to install the dependencies and then `cdk deploy [--profile PROFILE]`.
 
-## Useful commands
+This will build a Docker image of the application in `./app`, deploy a small VPC with only a public subnet, an ECS
+Cluster and a Fargate service with a single task; the Docker image of the application.
 
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+The stack is intentionally kept very basic, with no load balancing, auto scaling etc, and is not fit for production.
