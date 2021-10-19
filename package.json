@@ -1,9 +1,7 @@
 {
   "name": "hellotower",
   "version": "0.1.0",
-  "bin": {
-    "hellotower": "bin/hellotower.js"
-  },
+  "bin": "bin/hellotower.js",
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
@@ -25,5 +23,6 @@
     "@aws-cdk/aws-ecs": "^1.54.0",
     "@aws-cdk/core": "^1.54.0",
     "source-map-support": "^0.5.16"
-  }
+  },
+  "packageManager": "yarn@3.0.2"
 }
