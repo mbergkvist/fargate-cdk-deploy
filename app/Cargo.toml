@@ -8,5 +8,5 @@ edition = "2018"
 
 [dependencies]
 serde = "1"
-tokio = "0"
+tokio = "1"
 tower-web = "0"
